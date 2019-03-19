@@ -3,13 +3,13 @@ open System
 source https://api.nuget.org/v3/index.json
 source packages
 nuget Fake.Core.Target
-nuget Wonderstorm.Tools.Build //"
+nuget TestNamespace.Assembly //"
 #I __SOURCE_DIRECTORY__
 #load ".fake/build.fsx/intellisense.fsx"
 
-open Wonderstorm.Tools.Build
+open TestNamespace
 open Fake.Core
 
-Target.create "Nothing" WsBuild.BuildNothing
+Target.create "Nothing" TestBuild.BuildNothing
 
 Target.runOrDefault "Nothing"

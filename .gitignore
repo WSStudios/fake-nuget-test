@@ -1,4 +1,6 @@
 bin
 obj
 .fake
+*.nupkg
 packages
+paket-files
